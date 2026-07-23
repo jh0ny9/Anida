@@ -15,7 +15,7 @@
     <header class="site-header" id="inicio">
       <nav class="navbar" aria-label="Navegación principal">
         <a class="brand" href="#inicio" aria-label="ANIDA inicio">
-          <svg class="brand-logo" viewBox="0 0 300 96" role="img" aria-label="ANIDA"><path d="M17 68c2-31 13-51 30-51 14 0 27 14 38 28 10-19 22-37 38-37 23 0 32 30 29 56-2 18-12 27-27 28-17 1-31-12-39-25-9 13-22 25-38 25C31 92 18 83 17 68Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M22 57c9 24 31 35 61 35 33 0 54-12 64-34M45 55c13-10 24-10 39 4 7 7 11 15 12 24" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M172 78 191 25l20 53m-30-18h21M222 25h9l32 34V25h9v53h-8l-33-35v35h-9zm61 0h11c21 0 34 10 34 27s-13 26-34 26h-11zm10 9v35h2c14 0 23-6 23-17s-9-18-23-18z" fill="currentColor"/></svg>
+          <img class="brand-logo" src="assets/anida-logo.svg" alt="ANIDA" />
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-menu">Menú</button>
         <div class="nav-links" id="main-menu">
@@ -83,6 +83,10 @@
           <p class="eyebrow">Colaboradoras</p>
           <h3 id="colaboradoras-title">Una red de profesionales que suma cuidado.</h3>
           <p>Próximamente compartiremos aquí a las colaboradoras que forman parte de la red ANIDA.</p>
+          <div class="collaborators-grid">
+            <article class="collaborator-card"><div class="collaborator-photo" aria-hidden="true"></div><div><p class="eyebrow">Colaboradora provisional</p><h4>Nombre de colaboradora</h4></div></article>
+            <article class="collaborator-card"><div class="collaborator-photo collaborator-photo-alt" aria-hidden="true"></div><div><p class="eyebrow">Colaboradora provisional</p><h4>Nombre de colaboradora</h4></div></article>
+          </div>
         </div>
       </section>
 
@@ -137,8 +141,8 @@
 
     <footer class="footer">
       <div class="section-shell footer-grid">
-        <a class="brand" href="#inicio" aria-label="ANIDA inicio"><svg class="brand-logo" viewBox="0 0 300 96" aria-hidden="true"><path d="M17 68c2-31 13-51 30-51 14 0 27 14 38 28 10-19 22-37 38-37 23 0 32 30 29 56-2 18-12 27-27 28-17 1-31-12-39-25-9 13-22 25-38 25C31 92 18 83 17 68Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M22 57c9 24 31 35 61 35 33 0 54-12 64-34M45 55c13-10 24-10 39 4 7 7 11 15 12 24" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M172 78 191 25l20 53m-30-18h21M222 25h9l32 34V25h9v53h-8l-33-35v35h-9zm61 0h11c21 0 34 10 34 27s-13 26-34 26h-11zm10 9v35h2c14 0 23-6 23-17s-9-18-23-18z" fill="currentColor"/></svg></a>
-        <p>hola@anida.example</p><div class="social-links footer-social"><a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="filled"/></svg></a><a href="https://wa.me/34000000000" target="_blank" rel="noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.44L3.5 20.5l1.56-4.2A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8.8 7.9c.25-.55.5-.56.75-.56h.35c.13 0 .3.05.4.3l.9 2.05c.08.2.04.34-.05.48l-.38.48c-.13.14-.27.3-.12.57.15.27.7 1.13 1.5 1.82.99.86 1.82 1.13 2.1 1.27.26.13.42.1.57-.06l.72-.85c.15-.18.3-.15.5-.07l2.04.96c.25.12.3.24.3.36 0 .12-.07.72-.42 1.4-.34.67-2 1.28-2.73 1.28-.7 0-1.6-.32-2.73-.86-1.98-.94-3.28-3.28-3.38-3.43-.1-.14-.8-1.05-.8-2 0-.95.5-1.42.67-1.61Z"/></svg></a></div>
+        <a class="brand" href="#inicio" aria-label="ANIDA inicio"><img class="brand-logo" src="assets/anida-logo.svg" alt="ANIDA" /></a>
+        <p><a href="mailto:anidamaternidad@gmail.com">anidamaternidad@gmail.com</a></p><div class="social-links footer-social"><a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="filled"/></svg></a><a href="https://wa.me/34000000000" target="_blank" rel="noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.44L3.5 20.5l1.56-4.2A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8.8 7.9c.25-.55.5-.56.75-.56h.35c.13 0 .3.05.4.3l.9 2.05c.08.2.04.34-.05.48l-.38.48c-.13.14-.27.3-.12.57.15.27.7 1.13 1.5 1.82.99.86 1.82 1.13 2.1 1.27.26.13.42.1.57-.06l.72-.85c.15-.18.3-.15.5-.07l2.04.96c.25.12.3.24.3.36 0 .12-.07.72-.42 1.4-.34.67-2 1.28-2.73 1.28-.7 0-1.6-.32-2.73-.86-1.98-.94-3.28-3.28-3.38-3.43-.1-.14-.8-1.05-.8-2 0-.95.5-1.42.67-1.61Z"/></svg></a></div>
         <nav aria-label="Enlaces legales"><a href="#">Aviso legal</a><a href="#">Política de privacidad</a><a href="#">Política de cookies</a></nav>
       </div>
     </footer>
