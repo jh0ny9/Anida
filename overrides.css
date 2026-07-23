@@ -11,6 +11,8 @@
 }
 
 .brand-logo { width: 68px; height: 68px; object-fit: contain; }
+.brand-name { font-family: "Cormorant Garamond", serif; font-size: 2.45rem; font-weight: 600; letter-spacing: .08em; line-height: 1; color: var(--ink); }
+.footer .brand-name { color: #f2d6c9; }
 .hero h1 span { margin-top: 0.08em; }
 
 .collaborators-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
