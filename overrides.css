@@ -1,0 +1,9 @@
+/* Ajustes de navegación: se mantienen separados para facilitar futuras personalizaciones. */
+.site-header { padding-top: 85px; }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
