@@ -9,17 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Oooh+Baby&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="overrides.css" />
   </head>
   <body>
     <header class="site-header" id="inicio">
       <nav class="navbar" aria-label="Navegación principal">
         <a class="brand" href="#inicio" aria-label="ANIDA inicio">
-          <span class="brand-mark" aria-hidden="true">♡</span>
-          <span class="brand-text"><strong>ANIDA</strong><small>Acompañamiento integral<br />al embarazo, parto y postparto</small></span>
+          <img class="brand-logo" src="assets/anida-logo.svg" alt="ANIDA" />
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-menu">Menú</button>
         <div class="nav-links" id="main-menu">
-          <a href="#inicio">Inicio</a>
+          <a href="#quienes-somos">Quiénes somos</a>
           <a href="#sobre-anida">Sobre ANIDA</a>
           <a href="#acompanamiento">Acompañamiento</a>
           <a href="#recursos">Recursos</a>
@@ -42,10 +42,6 @@
             <a href="#acompanamiento"><span>✿</span>Lactancia y crianza</a>
           </div>
         </div>
-        <div class="hero-image" role="img" aria-label="Irene y Estefanía, equipo ANIDA">
-          <div class="portrait-card portrait-left"><span>Irene</span></div>
-          <div class="portrait-card portrait-right"><span>Estefanía</span></div>
-        </div>
       </section>
       <div class="trust-bar" aria-label="Valores destacados">
         <span>♡ Cercanas, presentes, profesionales</span>
@@ -61,14 +57,12 @@
           <h2>Un refugio para vivir la maternidad desde la calma, la conexión y la confianza.</h2>
         </div>
         <div class="about-grid">
-          <article class="soft-card large-card">
+          <article class="soft-card">
             <h3>Nuestra esencia</h3>
             <p>ANIDA nace para acompañar a la mujer en uno de los procesos más transformadores de su vida. No creemos en una maternidad perfecta: creemos en una maternidad consciente, sostenida y acompañada.</p>
             <p>Queremos que cada mujer se sienta escuchada, comprendida y segura mientras atraviesa los cambios físicos, emocionales y mentales que implica convertirse en madre.</p>
+            <div class="about-highlights"><div><h3>Propósito</h3><p>Acompañar a las mujeres para que vivan su maternidad desde la conexión, la calma y la confianza.</p></div><div><h3>Misión</h3><p>Ofrecer un acompañamiento integral, humano y profesional que cuide la salud emocional, física y mental de la mujer en cada etapa.</p></div><div><h3>Enfoque</h3><p>Creamos espacios seguros para comprenderse, sostenerse, prepararse, sanar y transformarse con una mirada completa y respetuosa.</p></div></div>
           </article>
-          <article class="soft-card"><h3>Propósito</h3><p>Acompañar a las mujeres para que vivan su maternidad desde la conexión, la calma y la confianza.</p></article>
-          <article class="soft-card"><h3>Misión</h3><p>Ofrecer un acompañamiento integral, humano y profesional que cuide la salud emocional, física y mental de la mujer en cada etapa.</p></article>
-          <article class="soft-card"><h3>Enfoque</h3><p>Creamos espacios seguros para comprenderse, sostenerse, prepararse, sanar y transformarse con una mirada completa y respetuosa.</p></article>
         </div>
         <ul class="values-list" aria-label="Valores de ANIDA">
           <li>Cercanía</li><li>Humanidad</li><li>Profesionalidad</li><li>Respeto</li><li>Conciencia</li><li>Calma</li><li>Tribu</li><li>Transformación</li>
@@ -84,6 +78,15 @@
         <div class="team-grid">
           <article class="team-card"><div class="team-photo irene" aria-hidden="true"></div><div><p class="eyebrow">Profesión provisional</p><h3>Irene</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo vel nibh placerat gravida. Sed a maternidad consciente, presencia y cuidado integral.</p></div></article>
           <article class="team-card"><div class="team-photo estefania" aria-hidden="true"></div><div><p class="eyebrow">Profesión provisional</p><h3>Estefanía</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel urna non arcu porttitor luctus. Acompañamiento respetuoso, escucha y bienestar emocional.</p></div></article>
+        </div>
+        <div class="collaborators" aria-labelledby="colaboradoras-title">
+          <p class="eyebrow">Colaboradoras</p>
+          <h3 id="colaboradoras-title">Una red de profesionales que suma cuidado.</h3>
+          <p>Próximamente compartiremos aquí a las colaboradoras que forman parte de la red ANIDA.</p>
+          <div class="collaborators-grid">
+            <article class="collaborator-card"><div class="collaborator-photo" aria-hidden="true"></div><div><p class="eyebrow">Colaboradora provisional</p><h4>Nombre de colaboradora</h4></div></article>
+            <article class="collaborator-card"><div class="collaborator-photo collaborator-photo-alt" aria-hidden="true"></div><div><p class="eyebrow">Colaboradora provisional</p><h4>Nombre de colaboradora</h4></div></article>
+          </div>
         </div>
       </section>
 
@@ -121,7 +124,7 @@
 
       <section class="section section-shell" id="contacto">
         <div class="split-grid contact-grid">
-          <div><p class="eyebrow">Contacto</p><h2>Cuéntanos qué necesitas. Estamos aquí para escucharte.</h2><p>El formulario de contacto está pensado para recibir consultas generales. El formulario de recursos se utiliza para captar personas interesadas y construir una base de datos configurable.</p><div class="social-links"><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a><a href="https://wa.me/34000000000" target="_blank" rel="noreferrer">WhatsApp</a></div></div>
+          <div><p class="eyebrow">Contacto</p><h2>Cuéntanos qué necesitas. Estamos aquí para escucharte.</h2><p>El formulario de contacto está pensado para recibir consultas generales. El formulario de recursos se utiliza para captar personas interesadas y construir una base de datos configurable.</p><div class="social-links"><a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="filled"/></svg></a><a href="https://wa.me/34000000000" target="_blank" rel="noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.44L3.5 20.5l1.56-4.2A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8.8 7.9c.25-.55.5-.56.75-.56h.35c.13 0 .3.05.4.3l.9 2.05c.08.2.04.34-.05.48l-.38.48c-.13.14-.27.3-.12.57.15.27.7 1.13 1.5 1.82.99.86 1.82 1.13 2.1 1.27.26.13.42.1.57-.06l.72-.85c.15-.18.3-.15.5-.07l2.04.96c.25.12.3.24.3.36 0 .12-.07.72-.42 1.4-.34.67-2 1.28-2.73 1.28-.7 0-1.6-.32-2.73-.86-1.98-.94-3.28-3.28-3.38-3.43-.1-.14-.8-1.05-.8-2 0-.95.5-1.42.67-1.61Z"/></svg></a></div></div>
           <form class="form-card" data-form="contact">
             <input type="hidden" name="formType" value="contact" />
             <label>Nombre <input name="name" autocomplete="name" required /></label>
@@ -138,8 +141,8 @@
 
     <footer class="footer">
       <div class="section-shell footer-grid">
-        <a class="brand" href="#inicio"><span class="brand-mark">♡</span><span class="brand-text"><strong>ANIDA</strong><small>Acompañamiento integral</small></span></a>
-        <p>hola@anida.example · Instagram · WhatsApp</p>
+        <a class="brand" href="#inicio" aria-label="ANIDA inicio"><img class="brand-logo" src="assets/anida-logo.svg" alt="ANIDA" /></a>
+        <p><a href="mailto:anidamaternidad@gmail.com">anidamaternidad@gmail.com</a></p><div class="social-links footer-social"><a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="filled"/></svg></a><a href="https://wa.me/34000000000" target="_blank" rel="noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.44L3.5 20.5l1.56-4.2A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8.8 7.9c.25-.55.5-.56.75-.56h.35c.13 0 .3.05.4.3l.9 2.05c.08.2.04.34-.05.48l-.38.48c-.13.14-.27.3-.12.57.15.27.7 1.13 1.5 1.82.99.86 1.82 1.13 2.1 1.27.26.13.42.1.57-.06l.72-.85c.15-.18.3-.15.5-.07l2.04.96c.25.12.3.24.3.36 0 .12-.07.72-.42 1.4-.34.67-2 1.28-2.73 1.28-.7 0-1.6-.32-2.73-.86-1.98-.94-3.28-3.28-3.38-3.43-.1-.14-.8-1.05-.8-2 0-.95.5-1.42.67-1.61Z"/></svg></a></div>
         <nav aria-label="Enlaces legales"><a href="#">Aviso legal</a><a href="#">Política de privacidad</a><a href="#">Política de cookies</a></nav>
       </div>
     </footer>
